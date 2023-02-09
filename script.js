@@ -62,10 +62,13 @@ function draw() {
     //         ry-=2;
     //         break;
     // }
-    rx += rx <= 600 ? rx <= 200 ? 2 : 0 : -2;
-    ry += ry <= 600 ? ry <= 200 ? 2 : 0 : -2;   
+    // rx += rx <= 600 ? rx <= 200 ? 2 : 0 : -2;
+    // ry += ry <= 600 ? ry <= 200 ? 2 : 0 : -2;   
+    // console.log(rx)
+    rx += ry <= 400 ? -2 : 2;
+    ry += rx >= 400 ? -2 : 2;
     clearScreen();
     rectangel(rx, ry)
 }
 
-setInterval(function() {draw()}, 1);
+setInterval(function() {draw()}, 16);
