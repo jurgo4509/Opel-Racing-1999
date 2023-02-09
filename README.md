@@ -1,4 +1,6 @@
-# bug-free-guacamole
-Mazais projekta darbs
-Nu nē
-Test Test
+# Opel Racing 1999
+
+racing oopla
+
+---
+###### Autori: Jurģis Ieviņš, Rinalds Marčenkovs
