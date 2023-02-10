@@ -36,37 +36,37 @@ function clearScreen(){
 
 
 function draw() {
-    // if(rx == 200 && ry == 200){
-    //     recticul = 0;
-    // }
-    // if(rx == 600 && ry == 200){
-    //     recticul = 1;
-    // }
-    // if(rx == 600 && ry == 600){
-    //     recticul = 2;
-    // }
-    // if(rx == 200 && ry == 600){
-    //     recticul = 3;
-    // }
-    // switch(recticul){
-    //     case 0:
-    //         rx+=2;
-    //         break;
-    //     case 1:
-    //         ry+=2;
-    //         break;
-    //     case 2:
-    //         rx-=2;
-    //         break;
-    //     case 3:
-    //         ry-=2;
-    //         break;
-    // }
+    if(rx == 200 && ry == 200){
+        recticul = 0;
+    }
+    if(rx == 600 && ry == 200){
+        recticul = 1;
+    }
+    if(rx == 600 && ry == 600){
+        recticul = 2;
+    }
+    if(rx == 200 && ry == 600){
+        recticul = 3;
+    }
+    switch(recticul){
+        case 0:
+            rx+=2;
+            break;
+        case 1:
+            ry+=2;
+            break;
+        case 2:
+            rx-=2;
+            break;
+        case 3:
+            ry-=2;
+            break;
+    }
     // rx += rx <= 600 ? rx <= 200 ? 2 : 0 : -2;
     // ry += ry <= 600 ? ry <= 200 ? 2 : 0 : -2;   
     // console.log(rx)
-    rx += ry <= 400 ? -2 : 2;
-    ry += rx >= 400 ? -2 : 2;
+    // rx += ry <= 400 ? -2 : 2;
+    // ry += rx >= 400 ? -2 : 2;
     clearScreen();
     rectangel(rx, ry)
 }
